@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    rgba(148, 9, 9, 1) 10%,
+    rgba(54, 125, 9, 1) 40%,
+    rgba(9, 121, 53, 1) 60%,
+    rgba(255, 7, 0, 1) 90%
+  );
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling only when needed */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stuff {
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: #dd6344;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c6543b;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #ff7e67;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Media Query for tablets */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  main {
+    width: 95%;
+    margin: 15px;
+  }
+
+  .intro {
+    padding: 18px;
+  }
+
+  button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  main {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .intro {
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
